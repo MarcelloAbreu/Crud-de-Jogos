@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    
+    <h1>Adicionar Jogos Com Promoção</h1>
+
+    <ul>
+        <li th:each="jogos : ${lista}">
+            <a th:href="@{/detalhes/{id}(id=${jogos.id})}" th:text="${jogos.nome}">Nome</a>
+            <a th:href="@{/editar/{id}(id=${jogos.id})}">|Editar</a>
+            <a th:href="@{/deletar/{id}(id=${jogos.id})}">|Deletar</a>
+        </li> 
+    </ul>
+
+    <a href="/cadastro">Adicionar Jogos</a>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Em Promoção</title>
+</head>
+<body>
+    <h1>JOGOS EM PROMOÇÃO</h1>
+
+    <form method="POST" action="/adicionar">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" th:value="${jogos.nome}" />
+
+        <label for="Preço Normal">|Preço do Game Sem Promoção:</label>
+        <input type="text" name="preço" id="preço" th:value="${jogos.preço}" />
+
+        <label for="Preço Com Promoção">|Preço do Game Com Promoção:</label>
+        <input type="text" name="promoção" id="promoçãao" th:value="${jogos.promoção}" />
+
+        <label for="id">Identificador:</label>
+        <input type="hidden" name="id" id="id" th:value="${jogos.id}" />
+
+        <input type="submit" value="Salvar" />
+    </form>
+
+    <a href="/">Voltar ao início</a>
+</body>
+</html>

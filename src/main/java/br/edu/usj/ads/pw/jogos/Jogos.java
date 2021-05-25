@@ -21,6 +21,6 @@ public class Jogos {
     Long id;
 
     String nome;
-    String preço;
-    String promoção;
+    String preco;
+    String promocao;
 }

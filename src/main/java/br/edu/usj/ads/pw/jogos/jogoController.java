@@ -41,7 +41,7 @@ public class jogoController {
         ModelAndView modelAndView = new ModelAndView("detalhes");
 
         // popular o template
-        modelAndView.addObject("Jogos", jogos);
+        modelAndView.addObject("jogos", jogos);
 
         // retornar o template
         return modelAndView;
@@ -56,7 +56,7 @@ public class jogoController {
         ModelAndView modelAndView = new ModelAndView("cadastro");
  
         // preencher o template com o jogos selecionado
-        modelAndView.addObject("Jogos", jogos);
+        modelAndView.addObject("jogos", jogos);
 
         //retornar ao template
         return modelAndView;
@@ -76,7 +76,7 @@ public class jogoController {
 
         ModelAndView modelAndView = new ModelAndView("cadastro");
 
-        modelAndView.addObject("Jogos", jogos);
+        modelAndView.addObject("jogos", jogos);
 
         return modelAndView;
     }
